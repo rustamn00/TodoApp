@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+  background-color: floralwhite;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.greeting {
+  font-size: medium;
+  padding: 10px 2em;
+}
+
+.greeting input {
+  border: none;
+}
+
+input[type="text"] {
+  font-size: large;
+  padding: 10px;
+  /* border-radius: 0; */
+  color: black;
+}
+
+.create-todo {
+  font-style: oblique;
+  font-size: larger;
+  padding: 10px 2em;
+  .todo {
+    border-radius: 8px;
+  }
+}
+
+input[type="submit"] {
+  background-color: rgba(0, 0, 255, 0.726);
+  padding: 12px 40px;
+  margin-left: 5px;
+  border-radius: 8px;
+  font-size: large;
+  color: white;
+  border: none;
+}
+
+input[type="checkbox"] {
+  /* display: ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 100%;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
+.todo-list {
+  margin: 10px 2em;
+}
+
+.todo-item {
+  display: flex;
+  margin: 5px 0;
+}
+
+.todo-content {
+  margin: 0 10px;
+}
+
+.todo-item.done .todo-content input {
+  text-decoration: line-through;
+  color: black;
+  font-size: large;
+}
+
+.todo-content input {
+  border-radius: 8px;
+}
+
+button.delete {
+  background-color: rgba(255, 0, 0, 0.726);
+  padding: 12px 40px;
+  margin-left: 5px;
+  border-radius: 8px;
+  font-size: large;
+  color: white;
+  border: none;
+}
+
+.btn {
+  /* background-color: var(--business); */
+  /* border-radius: 1em; */
+  font-size: medium;
+  cursor: pointer;
+}
+
+.import-export {
+  display: flex;
+  margin: 10px 2em;
+}
